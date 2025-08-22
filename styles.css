@@ -58,7 +58,7 @@ header {
 }
 .nav-links a {
   color: white;
-  text-decoration: none;
+  text-decoration: underline;
 }
 .btn-login {
   background: rgba(51, 137, 198, 1);
