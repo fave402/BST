@@ -1,0 +1,163 @@
+body {
+  margin: 20px;
+  padding: 15px 40px;
+  box-sizing: border-box;
+  background: #fbfbfb;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.container{
+  font-family: sans-serif;
+  background: #fbfbfb;
+  text-align: center;
+  padding: 2rem;
+  width: 1440px;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  border: 2px ;
+}
+
+
+nav {
+  background: #0d3b66;
+  padding: 15px 40px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  
+}
+nav .logo {
+  font-size: 24px;
+  font-weight: bold;
+  font-size: 18px;
+  align-items: center;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 70px;
+}
+
+nav ul li a{
+  cursor: pointer;
+}
+
+.form-container {
+ background: white;
+  padding: 2rem;
+  margin: 3rem auto;
+  width: 400px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.container img {
+  width: 150px;
+  height: 40px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  justify-content: center;
+  
+}
+
+input, button {
+  width: 90%;
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+  border: 2px solid #0d6efd;
+}
+button {
+  background: #0d6efd;
+  color: white;
+  border: none;
+  
+  border-radius: 4px;
+}
+.toggle {
+  position:absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #0d6efd;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+h5 {
+  color: #0d3b66;
+  margin: 1rem 0;
+}
+h1 {
+  color: #0d6efd;
+  margin-bottom: 5%;
+  font-size: 50px;
+  
+}
+
+.forgot-password {
+  color: gray;
+  text-align: right;
+  display: block;
+  font-size: 15px;
+} 
+
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #ccc;
+}
+
+.divider span {
+  margin: 0 10px;
+  color: #666;
+  font-size: 13px;
+}
+
+
+
+.social {
+  display: flex;
+  gap: 50px;
+}
+
+.social button {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border: 2px solid #0d6efd;
+  color: #333;
+  font-size: 14px;
+}
+
+.social button img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+
+.social button:hover {
+  background: grey;
+}
+
+
+/*.social img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
