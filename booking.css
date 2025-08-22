@@ -1,0 +1,293 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --bg-color-: #FBFBFB;
+    --color-1: #FFFFFF;
+    --color-2: #1A4869;
+    --color-3: #3389C6;
+    --font-1: #2C2C2C;
+    --card-1-3: #ECF6FE;
+    --card-2-4: #B2DDFB;
+    --font-family-1: "Poppins", sans-serif;
+}
+body{
+    font-family: var(--font-family-1);
+    background-color: var(--bg-color-);
+    color: var(--font-1);
+}
+
+/*header*/
+header{
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    position: fixed;
+    /* flex-wrap: wrap; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 10px;
+    gap: 25%;
+    background-color: var(--color-2);
+}
+#logo{
+    margin-left: 50px;
+    width: 8rem;
+    cursor: pointer;
+}
+nav{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+nav a{
+    text-decoration: none;
+    color: var(--color-1);
+    font-weight: 600;
+    font-size: 1em;
+    font-family: Poppins;
+}
+#person{
+    margin-left: 320px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-weight: 600;
+    font-size: 1.5em;
+    padding: 8px;
+    width: 3rem;
+    border-radius: 100px;
+    border: solid 4px var(--color-1);
+    color: var(--color-1);
+    background-color: var(--color-2);
+    cursor: pointer;
+}
+
+#hero{
+    background-image: url("booking-imgs/booking img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 94vh;
+    padding: 0px 0 0 80px;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+#father-1{
+    margin-top: 100px;
+}
+#hero-h3{
+    font-weight: 600;
+    font-size: 4em;
+    color: var(--color-1);
+}
+#search{
+    display: inline-flex;
+    gap: 120px;
+    align-items: center;
+    /* border: solid 1px var(--color-1); */
+    border-radius: 10px;
+    margin-top: 80px;
+    padding: 8px;
+    width: 25rem;
+    color: var(--color-1);
+    background-color: rgba(255, 255, 255, 0.153);
+}
+#search span{
+    font-weight: 400;
+    font-size: 0.8em;
+}
+
+#father-2{
+    margin-top: 20px;
+    width: 40rem;
+    height: 30rem;
+    padding: 10px 50px 10px 50px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: var(--color-1);
+}
+
+#book-a-flight{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--font-1);
+}
+#book-a-flight-h3{
+    font-weight: 600;
+    font-size: 1.5em;
+}
+#book-a-flight a{
+    color: var(--font-1);
+}
+#flight-nav{
+    margin-top: 20px;
+    gap: 20px;
+}
+#flight-nav a{
+    color: var(--font-1);
+    font-weight: 600;
+    font-size: 0.9em;
+}
+:hover#a-one-way{
+    color: var(--color-3);
+    border-bottom: solid 5px;
+    width: 5rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+:hover#a-round-trip{
+    color: var(--color-3);
+    border-bottom: solid 5px;
+    width: 5rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;   
+}
+:hover#a-multi-city{
+    color: var(--color-3);
+    border-bottom: solid 5px;
+    width: 5rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*first btns*/
+#custom-dropdown {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    position: relative;
+}
+.dropdown-btn{
+    width: 8rem;
+    height: 4rem;
+    border: solid 2px var(--color-3);
+    border-radius: 5px;
+    line-height: 2;
+    background-color: var(--bg-color-);
+}
+#arrow-forward{
+    font-weight: lighter;
+    font-size: 4em;
+    color: var(--color-3);
+}
+/*first-dropdowns*/
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 110%; /* below the button */
+    left: 0;
+    width: 20rem;
+    background: var(--bg-color-);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    z-index: 10;
+    padding: 10px;
+    border-radius: 8px;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 12px;
+    /* Use grid for 2 columns */
+    display: grid;
+}
+
+.location-option {
+    border: solid 2px var(--color-3);
+    border-radius: 5px;
+    background: var(--color-1);
+    padding: 10px 8px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 60px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: box-shadow 0.2s;
+}
+
+.location-option:hover {
+    box-shadow: 0 2px 8px rgba(51,137,198,0.12);
+    background: var(--card-1-3);
+}
+
+.location-option .abbr {
+    font-weight: 600;
+    font-size: 1em;
+    color: var(--color-3);
+    margin-bottom: 2px;
+}
+
+.location-option .full {
+    font-size: 0.95em;
+    color: var(--font-1);
+}
+
+#dates{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    margin-top: 30px;
+}
+.dates-bby{
+    border: solid 2px var(--color-3);
+    border-radius: 5px;
+    padding: 5px;
+    height: 6rem;
+    width: 12rem;
+    line-height: 3;
+    gap: 30px;
+}
+.dates-bby h3{
+    font-size: 0.8em;
+    font-weight: 600;
+}
+.dates-bby h4{
+    font-weight: 600;
+    font-size: 1.3em;
+}
+
+/*mini-dropdown*/
+#mini-dropdown{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.mini-dropdown-btn{
+    width: 10rem;
+    height: 2rem;
+    border: solid 2px var(--color-3);
+    border-radius: 5px;
+    background-color: var(--color-1);
+}
+
+footer{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 10px;
+    /* margin-top: 30px; */
+    color: #FFFFFF;
+    background-color: var(--color-2);
+}
+#footer-h3{
+    font-size: 1em;
+    margin-left: 50px;
+}
