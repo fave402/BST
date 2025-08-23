@@ -19,54 +19,62 @@ body {
   color: var(--font-1);
 }
 
-/*header*/
-header{
-    display: flex;
-    /* justify-content: space-around; */
-    align-items: center;
-    position: fixed;
-    /* flex-wrap: wrap; */
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    padding: 10px;
-    gap: 25%;
-    background-color: var(--color-2);
+.container {
+  width: 90%;
+  margin: auto;
 }
-#logo{
-    margin-left: 50px;
-    width: 8rem;
-    cursor: pointer;
+
+ /* Header container */
+header {
+  background: rgba(26, 72, 105, 1);
+  height: 72px;
+  position: fixed;   
+  top: 0;            
+  left: 0;          
+  width: 100%;       
+  z-index: 1000;
+  align-items: center;
+  gap: 25%;
+  
 }
-nav{
-    display: flex;
-    align-items: center;
-    gap: 50px;
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
 }
-nav a{
-    text-decoration: none;
-    color: var(--color-1);
-    font-weight: 600;
-    font-size: 1em;
-    font-family: Poppins;
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2.0rem;
 }
-#login{
-    margin-left: 320px;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: lighter;
-    font-size: 0.8em;
-    padding: 8px;
-    width: 3rem;
-    border-radius: 10px;
-    background-color: var(--color-3);
+
+.nav-links a {
+  color: white;
+  text-decoration: underline;
 }
-:hover#login{
-    background-color: rgb(51, 129, 198, 0.729);
-    color: var(--color-1);
+
+.btn-login  {
+  background: rgba(51, 137, 198, 1);
+  color:white;
+  padding: 8px 16px 8px 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  display: inline-flex;
 }
+
+.btn-login a {
+  color: white;
+
+}
+
+.btn-login:hover {
+  background: rgba(51, 129, 198, 0.729);
+}
+
 
 /*first div*/
 #father-1{
