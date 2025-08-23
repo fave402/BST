@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --bg-color-: #FBFBFB;
+    --color-1: #FFFFFF;
+    --color-2: #1A4869;
+    --color-3: #3389C6;
+    --colo-4: #1100ff;
+    --font-1: #2C2C2C;
+    --card-1-3: #ECF6FE;
+    --card-2-4: #B2DDFB;
+    --font-family-1: "Poppins", sans-serif;
+}
+
+body{
+    color: var(--font-1);
+    font-family: var(--font-family-1);
+    background-color: var(--bg-color-);
+}
+
+/*father*/
+.hotel-father{
+    padding: 30px 50px 0px 50px;
+}
+/*Hotel Title*/
+.hotel-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hotel-title{
+    font-weight: 600;
+    font-size: 2em;
+    color: var(--color-3);
+}
+#cancel-icon-a{
+    font-weight: 600;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: var(--font-1);
+}
+:hover#cancel-icon-a{
+    border-bottom: 3px solid var(--color-3);
+    color: var(--color-3);
+}
+
+/*Card grid container*/
+.hotels-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+/*Hotel-cards*/
+.hotel-card {
+    background-color: var(--card-1-3);
+    border-radius: 12px;
+    padding: 25px;
+    position: relative;
+    border: 2px solid var(--card-1-3);
+}
+
+.hotel-location {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.location-name {
+    font-size: 1.4em;
+    font-weight: 600;
+}
+
+.external-link {
+    color: var(--color-3);
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.external-link:hover {
+    color: var(--colo-4);
+}
+
+.hotel-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.hotel-list li {
+    color: #525252;
+    font-size: 0.95em;
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 15px;
+}
+
+.hotel-list li::before {
+    content: "•";
+    color: #2C2C2C;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+/*BOOK-HOTEL-BTN*/
+.book-hotel-section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-top: 100px;
+}
+
+.book-hotel-link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-3);
+    color: var(--color-1);
+    padding: 12px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    height: 3rem;
+    width: 20rem;
+    font-weight: 600;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.book-hotel-link:hover {
+    background-color: var(--colo-4);
+}
+
+/*FOOTER*/
+.footer-section {
+    background-color: #1A4869;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    padding-left: 50px;
+}
+
+#footer-txt {
+    color: var(--color-1);
+    font-size: 1.1em;
+    font-weight: 500;
+    margin: 0;
+}
+
+
+
+/*RESPONSIVNESS*/
+
+@media (max-width: 992px) {
+    .hotels-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    
+    .hotel-title {
+        font-size: 2.2em;
+    }
+    
+    .hotel-container {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hotels-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .hotel-title {
+        font-size: 1.8em;
+    }
+    
+    .hotel-container {
+        width: 95%;
+        height: 95%;
+        padding: 20px;
+    }
+    
+    .footer-section {
+        flex-direction: column;
+        gap: 0;
+        text-align: center;
+        margin: 0 -20px -20px -20px;
+        padding: 25px 20px;
+        justify-content: center;
+    }
+    
+    .book-hotel-section {
+        margin-bottom: 20px;
+    }
+    
+    .book-hotel-link {
+        padding: 15px 40px;
+        font-size: 1.1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .hotel-title {
+        font-size: 1.5em;
+    }
+    
+    .location-name {
+        font-size: 1.2em;
+    }
+    
+    .hotel-card {
+        padding: 20px;
+    }
+    
+    .hotel-list li {
+        font-size: 0.9em;
+    }
+}
