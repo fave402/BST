@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Peiwa Airlines</title> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* NAVBAR */
+    nav {
+      background: #0c3c60;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 50px;
+    }
+
+    nav .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: bold;
+      font-size: 20px;
+    
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-size: 15px;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    nav .login-btn {
+      background: #3389C6;
+      color: white;
+      border: none;
+      padding: 5px 15px;
+      border-radius: 3px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    /* MAIN CONTENT */
+    .container {
+      width: 80%;
+      margin: 30px auto;
+    }
+    h2 {
+      font-size: 36px;
+      margin-bottom: 15px;
+      color: #333;
+    }
+
+    h3 {
+      font-size: 22px;
+      margin-bottom: 15px;
+      color: #333;
+    }
+
+    .highlight {
+      font-size: 48px;
+      font-weight: bold;
+      margin: 20px 0;
+      line-height: 1.4;
+    }
+
+    .section {
+      margin: 40px 0;
+    }
+
+    /* GRID SECTIONS */
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+      margin-bottom: 50px;
+    }
+
+    /* Card Overlay */
+    .card-box {
+      position: relative;
+      width: 100%;
+      height: 220px;
+    }
+
+    .card-blue {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      width: 100%;
+      height: 100%;
+      background: #3389C6;
+      border-radius: 8px;
+      z-index: 1;
+    }
+
+    .card-gray {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #ccc;
+      border-radius: 8px;
+      z-index: 2;
+    }
+
+    .text h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: #1976d2;
+    }
+
+    /* Awards Section */
+    .awards-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 30px;
+      align-items: start;
+    }
+
+    .awards ul {
+      list-style: none;
+    }
+
+    .awards li {
+      margin-bottom: 12px;
+      font-size: 15px;
+    }
+
+    .awards strong {
+      font-weight: bold;
+    }
+
+    .awards img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    /* Founder */
+    .founder-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 30px;
+      align-items: start;
+      margin-top: 40px;
+    }
+
+    /* Executives */
+    .executives {
+      margin: 50px 0;
+    }
+
+    .executive-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .executive-card {
+      background: #fefefe;
+      border-radius: 8px;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .executive-card img {
+      width: 100%;
+      height: 180px;
+      border-radius: 8px;
+      object-fit: cover;
+      margin-bottom: 10px;
+      background: #d8c98a;
+    }
+
+    .executive-card h4 {
+      margin: 5px 0;
+    }
+
+    .executive-card p {
+      font-size: 14px;
+      color: #555;
+    }
+
+    /* Footer */
+    footer {
+      background: #0c3c60;
+      color: white;
+      text-align: center;
+      padding: 12px;
+      font-size: 14px;
+      margin-top: 30px;
+    }
+     .founder-img {
+      display: flex;
+      min-width: 5px;
+      align-items: flex-end;
+    }
+
+  </style>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav>
+    <div class="logo">
+      <img src="./img/Peiwa Logo Alone 1.png" alt="Logo">
+      Peiwa Airlines
+    </div>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+    <button class="login-btn">Login</button>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <div class="container">
+    <!-- About -->
+    <section class="section">
+      <h2>ABOUT US</h2>
+      <p class="highlight">Our mission is to connect people <br>through safe, reliable, and <br>comfortable air travel with a touch of <br>modern excellence.</p>
+      <p>Peiwa Airlines redefines modern air travel with comfort, reliability, and exceptional service. From seamless booking to <br>smooth landings, every journey is curated for ease and satisfaction. Whether you’re flying for business or leisure, Peiwa <br>ensures a premium experience in the skies, making every trip memorable, safe, and truly enjoyable.</p>
+    </section>
+
+    <section class="section">
+      <h2>More Than 100 million passengers flown <br>since 2015 to different continents</h2>
+      <p>We have helped millions of passengers connect to different parts of the world for their businesses, work and leisure. We fly our <br>passengers with class, poise and professionalism.</p>
+    </section>
+
+    <!-- Vision -->
+    <div class="grid">
+      <div class="card-box">
+        <div class="card-blue"></div>
+        <div class="card-gray"></div>
+      </div>
+      <div class="text">
+        <h3>Our Vision</h3>
+        <p>Peiwa’s vision is to connect the world with comfort, reliability, and modern air travel experiences. We aim to be the preferred airline for travelers seeking exceptional service, safety, and seamless global connections.</p>
+      </div>
+    </div>
+
+    <!-- Mission -->
+    <div class="grid">
+      <div class="text">
+        <h3>Our Mission</h3>
+        <p>To connect people and cultures through reliable, comfortable, and affordable air travel, while delivering a world-class passenger experience every step of the way.</p>
+      </div>
+      <div class="card-box">
+        <div class="card-blue"></div>
+        <div class="card-gray"></div>
+      </div>
+    </div>
+
+    <!-- Awards -->
+    <section class="section awards">
+      <h3>Awards & Achievements</h3>
+      <div class="awards-grid">
+        <!-- <ul>
+          <li><strong>2017 –</strong> Best New International Airline (World Airline Awards)</li>
+          <li><strong>2019 –</strong> World’s Fastest Growing Airline (Global Aviation Index)</li>
+          <li><strong>2021 –</strong> Best Cabin Crew Worldwide (SkyTrax Awards)</li>
+          <li><strong>2023 –</strong> Most Reliable Global Airline (International Flight Ratings)</li>
+          <li><strong>2024 –</strong> World’s Best In-Flight Entertainment (FlyWorld Awards)</li>
+        </ul> -->
+  1. 2017 – Best New International Airline (World Airline Awards) <br>  
+   For establishing a global presence within two years of launch. <br><br>
+
+ 2. 2019 – World's Fastest Growing Airline (Global Aviation Index) <br> 
+   Recognized for rapid international route expansion. <br><br>
+
+ 3. 2021 – Best Cabin Crew Worldwide (SkyTrax Awards)  <br>
+   Honored for exceptional in-flight service and professionalism. <br><br>
+
+ 4. 2023 – Most Reliable Global Airline (International Flight Ratings)  <br>
+   For on-time performance and minimal cancellations globally. <br><br>
+
+ 5. 2024 – World’s Best In-Flight Entertainment (FlyWorld Awards)  <br>
+   Celebrated for innovation and passenger engagement in digital entertainment.
+        <img src="./img/award img.png" alt="Award Image">
+      </div>
+    </section>
+
+    <!-- Founder -->
+    <section class="section founder">
+      <h3>About the Founder</h3>
+      <div class="founder-grid">
+        <p>
+          Born and raised in Lagos, Nigeria, Idris Seun studied <br>Aeronautical Engineering at Imperial College London. <br>After a decade of working with global airlines in <br>operations and strategy, he envisioned an airline that <br>made air travel more accessible to everyone. <br><br>
+
+In 2015, he founded Peiwa Airlines to offer reliable, <br>affordable flights with a touch of excellence. His goal <br>is to bridge continents and bring people closer <br>through seamless travel experiences. <br><br>
+
+Driven by innovation and customer-first values, Idris <br>continues to lead Peiwa with a vision to redefine <br>modern air travel around the world.
+
+
+        </p>
+        
+       <img src="./img/founder img.png" alt="Founder of Peiwa Airlines">
+      
+      </div>
+    </section>
+
+    <!-- Executives -->
+    <section class="executives">
+      <h3>Meet the Executives</h3>
+      <div class="executive-grid">
+        <div class="executive-card">
+          <img src="./img/founder img.png" alt="CEO">
+          <h4>CEO</h4>
+          <p>Idris Seun</p>
+          <div class="social-icons">
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-x-twitter"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        </div>
+        <div class="executive-card">
+          <img src="./img/coo img.png" alt="COO">
+          <h4>COO</h4>
+          <p>Luke Madison</p>
+          <div class="social-icons">
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-x-twitter"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        </div>
+        <div class="executive-card">
+          <img src="./img/cfo img.png" alt="CFO">
+          <h4>CFO</h4>
+          <p>John Lee</p>
+          <div class="social-icons">
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-x-twitter"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        </div>
+        <div class="executive-card">
+          <img src="./img/cmo img.png" alt="CMO">
+          <h4>CMO</h4>
+          <p>Alison May</p>
+          <div class="social-icons">
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-x-twitter"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    Reach to the peak with Peiwa
+  </footer>
+</body>
+</html>
+</body>
+</html>
