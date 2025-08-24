@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crypto Payment</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f1f3fa;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      min-height: 100vh;
+      gap: 40px;
+    }
+
+    /* Main Card */
+    .card {
+      background: #fff;
+      width: 420px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      padding: 20px;
+      position: relative;
+    }
+
+    /* Close Button */
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 20px;
+      color: #555;
+      cursor: pointer;
+    }
+
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 25px; /* spacing below the close button */
+      margin-bottom: 20px;
+    }
+
+    .card-header-left {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .card-header-left h3 {
+      font-size: 20px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .card-header-right {
+      text-align: center;
+      font-size: 12px;
+      color: #444;
+    }
+
+    .card-header-right i {
+      font-size: 20px;
+      color: #1a4ed8;
+      margin-bottom: 2px;
+    }
+
+    .wallet-address {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 8px;
+    }
+
+    .input-icon {
+      display: flex;
+      align-items: center;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      margin-bottom: 15px;
+      overflow: hidden;
+    }
+
+    .input-icon i {
+      background: #fceae7;
+      color: #e74c3c;
+      padding: 10px;
+      font-size: 16px;
+    }
+
+    .input-icon input {
+      border: none;
+      outline: none;
+      flex: 1;
+      padding: 10px;
+      font-size: 14px;
+    }
+
+    .row {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 15px;
+    }
+
+    .row .input-box {
+      flex: 1;
+      display: flex;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      overflow: hidden;
+    }
+
+    .row input {
+      border: none;
+      outline: none;
+      flex: 1;
+      padding: 10px;
+      font-size: 14px;
+    }
+
+    .row span {
+      background: #f8f8f8;
+      padding: 10px;
+      font-size: 14px;
+      color: #333;
+      border-left: 1px solid #ccc;
+    }
+
+    .balance {
+      font-size: 14px;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .balance a {
+      color: #1a4ed8;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .btn {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 6px;
+      background: linear-gradient(to right, #3b82f6, #1e40af);
+      color: white;
+      font-size: 15px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    /* Label above second card */
+    .section-label {
+      font-size: 14px;
+      font-weight: bold;
+      color: #444;
+      margin-bottom: -25px; /* pulls label closer to card */
+      align-self: flex-start;
+    }
+
+    /* Second Card */
+    .card-small {
+      background: #fff;
+      width: 420px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      padding: 25px;
+      text-align: center;
+    }
+
+    .card-small h3 {
+      font-size: 20px;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px; /* wider gap for bitcoin logo */
+    }
+
+    .card-small p {
+      font-size: 14px;
+      color: #1a4ed8;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .btn-outline {
+      padding: 10px 20px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      background: none;
+      font-size: 14px;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- First card -->
+  <div class="card">
+    <!-- X on top -->
+    <span class="close-btn"><i class="fa-solid fa-xmark"></i></span>
+
+    <div class="card-header">
+      <!-- Left -->
+      <div class="card-header-left">
+        <i class="fa-brands fa-bitcoin" style="color:#f7931a; font-size:20px;"></i>
+        <h3>Crypto Payment</h3>
+      </div>
+      <!-- Right -->
+      <div class="card-header-right">
+        <i class="fa-solid fa-wallet"></i><br>
+        dheh5....b7d53F189dgh
+      </div>
+    </div>
+
+    <div class="wallet-address">Your Wallet Address</div>
+    <div class="input-icon">
+      <i class="fa-brands fa-bitcoin"></i>
+      <input type="text" value="dheh52JH89hNghxDFne2b7d53F189dgh" readonly>
+    </div>
+
+    <div class="wallet-address">Amount</div>
+    <div class="row">
+      <div class="input-box">
+        <input type="text" placeholder="0.00">
+        <span>BTC</span>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-box">
+        <input type="text" placeholder="0.00">
+        <span>USD</span>
+      </div>
+    </div>
+
+    <div class="balance">
+      Available balance: <a href="#">0.5 BTC</a>
+    </div>
+
+    <button class="btn">Pay Now</button>
+  </div>
+
+  <!-- Section label -->
+  <div class="section-label">Crypto Wallet Connection</div>
+
+  <!-- Second card -->
+  <div class="card-small">
+    <h3>
+      <i class="fa-brands fa-bitcoin" style="color:#f7931a;"></i> 
+      Crypto Payment
+    </h3>
+    <p>Pay Swiftly Using <br>the Blockchain Technology</p>
+    <button class="btn-outline">
+      <i class="fa-solid fa-wallet"></i> Connect Wallet
+    </button>
+  </div>
+
+</body>
+</html>
