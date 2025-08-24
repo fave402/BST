@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Options - Peiwa Airlines</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="navbar">
+    <a href="index.html">
+                        <img src="Images/Peiwa logo.png" alt="logo" class="logo"/>
+        </a>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Services</a>
+      <a href="#">About</a>
+      <a href="#">Contact Us</a>
+    </nav>
+    <div class="profile-icon">
+      <i class="fa-solid fa-user-circle"></i>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <section class="container">
+    <h2>PAYMENT OPTIONS</h2>
+
+    <!-- Currency Selector -->
+    <div class="currency-box">
+      <div class="currency-left">
+        <i class="fa-solid fa-rotate fa-lg"></i>
+        <span>Change currency<br><small>Pay with your preferred currency</small></span>
+      </div>
+      <div class="currency-right">
+        <select id="currencySelect">
+            <option value="USD">U.S Dollars (USD)</option>
+            <option value="EUR">Euro (EUR)</option>
+            <option value="GBP">Pounds (GBP)</option>
+            <option value="NGN">Naira (NGN)</option>
+        </select>
+        <span class="total">Total <strong id="totalAmount">USD 21,408</strong></span>
+      </div>
+    </div>
+
+    <!-- Payment Options -->
+    <div class="payment-options">
+
+      <div class="payment-item">
+        <button class="btn bank"><i class="fa-solid fa-building-columns"></i> Bank Transfer</button>
+        <div class="payment-links">
+          <a href="Bank Transfer details.html">View details</a>  <a href="#">Bank Transfer</a>
+        </div>
+      </div>
+
+      <div class="payment-item">
+        <button class="btn bitcoin"><i class="fa-brands fa-bitcoin"></i> Bitcoin</button>
+        <div class="payment-links">
+          <a href="#">Click to connect wallet</a>
+        </div>
+      </div>
+
+      <div class="payment-item">
+        <button class="btn paypal"><i class="fa-brands fa-paypal"></i> PayPal</button>
+        <div class="payment-links">
+          <a href="#">Click to make payment</a>
+        </div>
+      </div>
+
+      <div class="payment-item">
+        <button class="btn card"><i class="fa-regular fa-credit-card"></i> Credit Card</button>
+        <div class="payment-links">
+          <a href="#">Click to make payment</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Payment Policy -->
+    <section class="policy">
+      <h3>Our Payment Policy</h3>
+      <p>
+        All flight bookings must be paid in full<br> at the time of purchase.
+        We accept<br> major credit/debit cards, bank<br> transfers, and approved digital<br> payment methods.
+        All payments are<br> processed securely. Bookings are<br> confirmed only after successful<br> payment.
+        Refunds, if applicable, are<br> subject to our cancellation terms.
+      </p>
+    </section>
+  </section>
+
+  <!-- Bank Transfer Popup -->
+        <div id="bankPopup" class="popup-overlay">
+          <div class="popup-box">
+            <span class="close-btn">&times;</span>
+            <div clasa="popup">
+              <h2><i class="fa-solid fa-building-columns"></i> Bank Transfer Detail</h2>
+            </div>
+            
+            <div class="popup-header">
+              <img src="Images/Peiwa logo.png" alt="Peiwa Airlines" class="popup-logo">
+              <span class="pay-text"><small>Pay</small>: <strong id="popupPay">$1220.88</strong></span>
+            </div>
+            <div class="popup-content">
+              <div class="one">
+                <p>BANK NAME<br><strong>Flash Bank</strong></p>
+                <p>ACCOUNT NUMBER 
+                  <br>
+                  <span class="copy-row">
+                    <span id="accountNum"><strong>7390826463</strong></span> 
+                    <i class="fa-regular fa-copy copy-btn" onclick="copyText('accountNum')"></i>
+                  </span>
+                </p>
+              </div>
+              <p>AMOUNT
+                <br>
+                <span class="copy-row">
+                  <span id="amountVal"><strong>$1220.88</strong></span>
+                  <i class="fa-regular fa-copy copy-btn" onclick="copyText('amountVal')"></i>
+                </span>
+              </p>
+              <p>ACCOUNT TYPE<br><strong>Current</strong></p>
+            </div>
+          </div>
+        </div>
+
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-bar">
+          <p>Reach to the peak with Peiwa</p>
+    </div>
+  </footer>
+
+  <script src="file.js"></script>
+
+</body>
+</html>
