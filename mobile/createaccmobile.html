@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Mobile</title>
+    <link rel="stylesheet" href="createaccmobile.css" />
+</head>
+<body>
+    <div class="container">
+        <h5>Peiwa airlines</h5>
+    <h1>Create An Account</h1>
+    <h3>Please create your account</h3>
+   
+    <form id="login-page" action="https://formsubmit.co/chukwumaangeliruoma@gmail.com"
+        method="POST" enctype="multipart/form-data" target="_blank">
+    
+    <input type="hidden" name="_captcha" value="true">
+    <input type="hidden" name="_next" value="http://127.0.0.1:5500/feedback.html">
+    
+    <div class="input">
+        <label for="email" id="label-name">Email Address</label><br>
+        <input type="email" id="name" name="email" placeholder="Email Address" required >
+    </div>
+
+    <div class="input">
+        <label for="password" id="label-password">password</label><br>
+        <input type="password" id="password" name="password" placeholder="password" required >
+    </div>
+
+    <div class="input">
+        <label for="confirm-password" id="label-password">Confirm Password</label><br>
+        <input type="password" id="confirm-password" name="confirm-password" placeholder="confirm-password" required >
+    </div>
+
+     <div>
+        <button type="submit" id="login">login</button>
+    </div>
+     <h5>or login with</h5>
+    
+    <div class="social-buttons">
+        <button class="google">Google</button>
+        <button class="facebook">Facebook</button>
+    </div>    
+    <p>Don't disclose your account information to anyone</p>
+    </form>
+    </div>
+    
+
+   
+</body>
+</html>

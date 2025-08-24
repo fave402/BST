@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login mobile</title>
+    <link rel="stylesheet" href="loginmobile.css" />
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo"> <img src="Peiwa logo.png" alt="Peiwa Airlines Logo"></div>
+        <select id="role" name="role" required>
+            <option value=""disabled selected>nav bar</option>
+            <option value="facilitator">home</option>
+            <option value="mentor">services</option>
+            <option value="assignment evaluator">about</option>
+            <option value="all of the above">contact us</option>
+        </select>
+    </nav>
+
+    <div class="container">
+        <img src="Peiwa logo.png" alt="Peiwa Airlines Logo">
+        <h1>Welcome Back</h1>
+        <h3>Please log into your account</h3>
+
+        <form id="login-page" action="https://formsubmit.co/chukwumaangeliruoma@gmail.com" method="POST"
+            enctype="multipart/form-data" target="_blank">
+
+            <input type="hidden" name="_captcha" value="true">
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/feedback.html">
+
+            <div>
+                <label for="email" id="label-name">Email Address</label><br>
+                <input type="email" id="name" name="email" placeholder="Email Address" required>
+
+            </div>
+
+            <div>
+                <label for="password" id="label-password">password</label><br>
+                <input type="text" id="password" name="password" placeholder="password" required>
+                <a href="#" class="forgot-password">Forgot password?</a>
+                <!-- <span class="toggle" onclick="togglepassword('loginpassword')">Show Password</span>-->
+            </div>
+
+            <div class="divider"><span>Or Login with</span></div>
+            <div class="social">
+                <button><img src="https://img.icons8.com/color/24/google-logo.png" /> Google</button>
+                <button><img src="https://img.icons8.com/color/24/facebook-new.png" /> Facebook</button>
+            </div>
+            <small>Don’t have an account? <a href="#signup">Sign up</a></small>
+    </div>
+
+    </form>
+    </div>
+
+
+    <script src="login.js"></script>
+
+
+</body>
+
+</html>
