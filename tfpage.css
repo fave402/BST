@@ -1,0 +1,158 @@
+/* General page */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background: var(--Colours-Light-text-and-background-250, rgba(247, 247, 247, 1));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+/* Header */
+.modal-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 10px;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.header-left .icon {
+  font-size: 28px;
+  color: #1f80db;
+}
+
+.header-left h2 {
+  font-size: 20px;
+  color: #1f80db;
+  font-weight: bold;
+}
+
+/* Close button */
+.close-btn {
+  position: absolute;
+  right: 0;
+  font-size: 22px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Amount text */
+.amount-text {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 6px;
+  width: 100%;
+  max-width: 500px;
+  text-align: left;
+}
+
+/*form comtainer */
+.form-box {
+  background:#f7f2f4;
+  padding: 20px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 20px;
+  min-height: 385px; /* taller box */
+  display: flex; /* make it flex container */
+  align-items: stretch; /* for full height */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* spreads inputs evenly */
+  width: 100%;
+  gap: 0;
+}
+
+label {
+  font-size: 13px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 0px;
+  margin-left: 18px;
+  margin-top: 20px;
+}
+
+input {
+  width: 70%;  
+  padding: 6px 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  text-align: left;
+  margin-left: 18px;
+  margin-bottom: 15px;
+}
+
+select {
+  width: 70%;
+  padding: 6px 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  text-align: left;
+  margin-left: 18px;
+  margin-bottom: 15px;
+}
+
+select:focus {
+  border-color: #1f80db;
+}
+
+input:focus {
+  border-color: #1f80db;
+}
+
+.pay-btn {
+  display: block;
+  width: 70%; /* reduce width */
+  max-width: 250px; /* prevents it from growing too wide */
+  margin: 0 auto 20px; /* centers the button under the box */ 
+  background: #1f80db;
+  color: #fff;
+  padding: 6px 8px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.pay-btn:hover {
+  background: #1567b5;
+}
+
+/* Footer text */
+.footer-text {
+  font-size: 13px;
+  color: #333;
+  text-align: left;
+  width: 100%;
+  max-width: 500px;
+}
+
+.footer-text .expiry-time {
+  color: #1f80db;
+  font-weight: bold;
+}

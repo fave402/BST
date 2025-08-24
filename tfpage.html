@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bank Transfer</title>
+  <link rel="stylesheet" href="tfpage.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="modal-header">
+    <div class="header-left">
+      <span class="icon">🏦</span>
+      <h2>Bank Transfer</h2>
+    </div>
+    <button class="close-btn">&times;</button>
+  </div>
+
+  <!-- Amount text -->
+  <p class="amount-text">Pay: <strong>$1220.88</strong></p>
+
+  <!-- Form container -->
+  <div class="form-box">
+    <form>
+      <label>BANK NAME</label>
+      <input type="text" pattern="[A-Za-z\s]*" placeholder="">
+
+      <label>ACCOUNT NUMBER</label>
+      <input type="number" inputmode="numeric" pattern="\d*" placeholder="">
+
+      <label>AMOUNT</label>
+      <input type="text" placeholder="USD 0.00">
+
+      <label>ACCOUNT TYPE</label>
+      <select>
+        <option value="" hidden></option>
+        <option value="savings">Savings</option>
+        <option value="current">Current</option>
+        <option value="domiciliary">Domiciliary</option>
+        <option value="fixed">Fixed Deposit</option>
+    </select>
+    </form>
+  </div>
+
+  <!-- Pay button -->
+  <button type="button" class="pay-btn">Pay Now</button>
+
+  <!-- Footer -->
+  <p class="footer-text">
+    This account is for this transaction only and expires in 
+    <span class="expiry-time">15:00</span>
+  </p>
+
+  <script src="tfpage.js"></script>
+</body>
+</html>
