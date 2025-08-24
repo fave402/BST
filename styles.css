@@ -741,12 +741,14 @@ footer {
 .social-icons {
   left: 80px;
   gap: 20px;
+  width: 158px;
+  height: 32px;
 }
 
 .social-icons a {
   display: inline-block;
-  width: 24px;
-  height: 24px;
+  width: 25px;
+  height: 25px;
   border: 1.5px;
   line-height: 32px;
   text-align: center;
@@ -834,7 +836,7 @@ footer {
 }
 
 .footer-bottom {
-  margin-top: 250px; /* adjust */
+  margin-top: 280px; /* adjust */
   padding: 12px;
   margin-left: -5px;
 }
