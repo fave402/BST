@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Peiwa Airlines - Contact Us</title>
   <link rel="stylesheet" href="contactdesk.css">
 </head>
+
 <body>
   <!-- Navbar -->
   <header>
     <div class="navbar">
-       <img src="Peiwa logo.png" alt="Peiwa Airlines Logo">
+      <img class="logo" src="Peiwa logo.png" alt="Peiwa Airlines Logo">
       <nav>
         <ul class="nav-links">
           <li><a href="#">Home</a></li>
@@ -23,18 +25,18 @@
   </header>
 
   <!-- Contact Section -->
-  <section class="contact-section">
-    <div class="contact-content">
-      <h3>CONTACT US</h3>
+  <section class="contact-hero">
+    <div class="hero-content">
+      <h1>CONTACT US</h1>
       <h2>Get in Touch With Us Today</h2>
       <p>
-        Not sure of what you want? Want to ask questions or make inquiries? 
-        The team at Peiwa Airlines would be happy to assist you. Your suggestions, 
-        input and ideas are important to us.
+        Not sure of what you want? Want to ask questions or make inquiries? The team at
+        Peiwa Airlines would be happy to assist you. Your suggestions, input and ideas are
+        important to us.
       </p>
       <p>
-        Our customer care center works 24/7 to provide you with the best of services. 
-        We got you covered every day and any time.
+        Our customer care center works 24/7 to provide you with the best of services. We got you
+        covered every day and any time.
       </p>
 
       <div class="contact-details">
@@ -43,48 +45,76 @@
         <p>🌍 www.peiwaairlines.com</p>
       </div>
 
-      <!-- Form -->
-      <h3>For Request</h3>
-      <form id="contactForm">
-        <input type="text" id="name" placeholder="Name" required>
-        <input type="email" id="email" placeholder="Email" required>
-        <textarea id="message" rows="4" placeholder="Message" required></textarea>
-        <button type="submit">Send Your Request</button>
-      </form>
     </div>
-
-    <div class="contact-side">
-     <img src="contact pic1.jpg" alt="image">
-     <img src="contact pic2.jpg" alt="image of workers">
-    </div>
+    <img src="contact pic1.jpg" alt="image">
   </section>
 
-  <!-- Feedback and Addresses -->
-  <section class="feedback-address">
-    <div class="feedback">
-      <h3>With Your Feedback We Can:</h3>
-      <ul>
-        <li>✔ Provide real-time support to passengers.</li>
-        <li>✔ Handle flight inquiries and complaints efficiently.</li>
-        <li>✔ Improve customer satisfaction and trust.</li>
-        <li>✔ Manage booking and ticketing issues faster.</li>
-        <li>✔ Offer multilingual assistance to global travelers.</li>
-        <li>✔ Collect feedback for service improvements.</li>
-        <li>✔ Build strong customer relationships.</li>
-      </ul>
-    </div>
+  <section class="contact-form">
+    <!-- Form -->
 
-    <div class="addresses">
-      <h3>Our Addresses</h3>
+    <form id="contactForm">
+      <h3>For Request</h3>
+      <label for="name">NAME</label>
+      <input type="text" id="name" required>
+      <label for="email">EMAIL</label>
+      <input type="email" id="email" required>
+      <label for="message">MESSAGE</label>
+      <textarea id="message" rows="1" required></textarea>
+      <input type="button" value="Send Your Request">
+    </form>
+    <img src="contact pic2.jpg" alt="image of workers">
+
+  </section>
+
+  <section class="info">
+    <div class="feedback">
+        <h2>With Your Feedback We Can:</h2>
+        <ul>
+          <li>✔ Provide real-time support to passengers.</li>
+          <li>✔ Handle flight inquiries and complaints efficiently.</li>
+          <li>✔ Improve customer satisfaction and trust.</li>
+          <li>✔ Manage booking and ticketing issues faster.</li>
+          <li>✔ Offer multilingual assistance to global travelers.</li>
+          <li>✔ Collect feedback for service improvements.</li>
+          <li>✔ Build strong customer relationships.</li>
+        </ul>
+      </div>
+      <div class="address">
+      <h2>Our Addresses</h2>
       <ul>
-        <li><strong>📍 New York, USA</strong><br>875 Lexington Avenue Suite 1200, New York, NY 10065</li>
-        <li><strong>📍 Toronto, Canada</strong><br>45 King’s Cross Road, London WC1X 9LN, UK</li>
-        <li><strong>📍 Dubai, UAE</strong><br>Office 3202, Level 32 Jumeirah Business Centre 1 Cluster G, JLT Dubai</li>
-        <li><strong>📍 Sydney, Australia</strong><br>Level 6, 345 George Street, Sydney NSW 2000</li>
-        <li><strong>📍 London, UK</strong><br>45 King’s Cross Road, London WC1X 9LN, UK</li>
-        <li><strong>📍 Cape Town, South Africa</strong><br>12 Loop Street CBD, Cape Town, 8001</li>
+        <div>
+          <li>
+            <strong>📍 New York, USA</strong>
+            875 Lexington Avenue Suite 1200, <br>New York, NY 10065
+          </li>
+          <li>
+            <strong>📍 London, UK</strong>
+            45 King’s Cross Road, London WC1X 9LN, UK
+          </li>
+        </div>
+        <div>
+          <li>
+            <strong>📍 Dubai, UAE</strong>
+            Office 3202, Level 32 Jumeirah Business Centre 1 Cluster G, JLT Dubai
+          </li>
+          <li>
+            <strong>📍 Sydney, Australia</strong>
+            Level 6, 345 George Street, Sydney NSW 2000 <br>Australia
+          </li>
+        </div>
+        <div>
+          <li>
+            <strong>📍 Cape Town, South Africa</strong>
+            12 Loop Street CBD, Cape Town, 8001 <br>South Africa
+          </li>
+          <li>
+            <strong>📍 Toronto, Canada</strong>
+            45 King’s Cross Road, London WC1X 9LN, United <br>Kingdom
+          </li>
+        </div>
       </ul>
-    </div>
+      </div>
+
   </section>
 
   <!-- Footer -->
@@ -94,4 +124,5 @@
 
   <script src="script.js"></script>
 </body>
+
 </html>

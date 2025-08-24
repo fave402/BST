@@ -55,7 +55,11 @@ header {
   border: none;
   border-radius: 10px;
   cursor: pointer;
+<<<<<<< HEAD
   display: inline-flex;
+=======
+  color: white;
+>>>>>>> f8ea11ad4202262efba489e65034ac91297ff613
 }
 
 .btn-login a {
@@ -78,10 +82,19 @@ header {
   margin-top:  100px;
 }
 
+<<<<<<< HEAD
 .container-box img {
   width: 150px;
   height: auto;
   margin-bottom: 15px;
+=======
+input, button {
+  width: 90%;
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+  border: 2px solid #0d6efd;
+  color: #fbfbfb;
+>>>>>>> f8ea11ad4202262efba489e65034ac91297ff613
 }
 
 h1 {
