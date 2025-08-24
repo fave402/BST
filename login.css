@@ -6,72 +6,26 @@ body {
   font-family: Arial, sans-serif;
 }
 
-.container {
-  width: 90%;
-  margin: auto;
-}
-
-
-
-header {
-  background: rgba(26, 72, 105, 1);
-  height: 72px;
-  position: fixed;   
-  top: 0;            
-  left: 0;          
-  width: 100%;       
-  z-index: 1000;
-  align-items: center;
-  gap: 25%;
-  
-}
-
-.nav {
+nav {
+  background: #0d3b66;
+  padding: 15px 40px;
+  color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 0;
 }
 
-.nav-links {
+nav ul {
   list-style: none;
   display: flex;
-  gap: 2.0rem;
+  gap: 40px;
 }
 
-.nav-links a {
-  color: white;
-  text-decoration: none;
-}
-
-.nav-links a:hover {
-  text-decoration: underline;
-}
-
-.btn-login  {
-  background: rgba(51, 137, 198, 1);
-  color:white;
-  padding: 8px 16px 8px 16px;
-  border: none;
-  border-radius: 10px;
+nav ul li {
   cursor: pointer;
-<<<<<<< HEAD
-  display: inline-flex;
-=======
-  color: white;
->>>>>>> f8ea11ad4202262efba489e65034ac91297ff613
 }
 
-.btn-login a {
-  color: white;
-
-}
-
-.btn-login:hover {
-  background: rgba(51, 129, 198, 0.729);
-}
-
-.container-box {
+.container {
   max-width: 400px;
   margin: 3rem auto;
   background: #fff;
@@ -79,35 +33,24 @@ header {
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
   text-align: center;
-  margin-top:  100px;
 }
 
-<<<<<<< HEAD
-.container-box img {
+.container img {
   width: 150px;
   height: auto;
   margin-bottom: 15px;
-=======
-input, button {
-  width: 90%;
-  padding: 0.75rem;
-  margin: 0.5rem 0;
-  border: 2px solid #0d6efd;
-  color: #fbfbfb;
->>>>>>> f8ea11ad4202262efba489e65034ac91297ff613
 }
 
 h1 {
-  color: rgba(51, 137, 198, 1);
+  color: #0d6efd;
   margin-bottom: 1rem;
   font-size: 32px;
   font-weight: bold;
 }
 
 p {
-  color: rgba(128, 128, 128, 1);
+  color: #444;
   margin-bottom: 1.5rem;
-  margin-top: 10px;
 }
 
 input {
