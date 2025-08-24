@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
 }
 :root{
     --bg-color-: #FBFBFB;
@@ -22,50 +23,49 @@ body{
 
 /*header*/
 header{
-    display: flex;
-    /* justify-content: space-around; */
-    align-items: center;
     position: fixed;
-    /* flex-wrap: wrap; */
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000;
-    padding: 10px;
-    gap: 25%;
-    background-color: var(--color-2);
+    z-index: 1000;  
 }
-#logo{
-    margin-left: 50px;
-    width: 8rem;
-    cursor: pointer;
+
+/* Navbar */
+.navbar {
+  background: rgba(26, 72, 105, 1);
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 5%;
+  height: 72px;
 }
-nav{
-    display: flex;
-    align-items: center;
-    gap: 50px;
+
+.navbar .logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: bold;
 }
-nav a{
-    text-decoration: none;
-    color: var(--color-1);
-    font-weight: 600;
-    font-size: 1em;
-    font-family: Poppins;
+
+.navbar .logo img {
+  width: 32px;
+  height: 32px;
 }
-#person{
-    margin-left: 320px;
-    display: inline-flex;
-    justify-content: center;
-    align-items: flex-end;
-    font-weight: 600;
-    font-size: 1.5em;
-    padding: 8px;
-    width: 3rem;
-    border-radius: 100px;
-    border: solid 4px var(--color-1);
-    color: var(--color-1);
-    background-color: var(--color-2);
-    cursor: pointer;
+
+.navbar nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+.navbar nav a:hover {
+  text-decoration: underline;
+}
+
+.profile-icon i {
+  font-size: 22px;
 }
 
 #hero{
